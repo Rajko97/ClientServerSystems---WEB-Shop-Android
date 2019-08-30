@@ -30,13 +30,22 @@
             />
 
         <EditText
-            android:id="@+id/editEmail"
+            android:id="@+id/editServer"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.3"
             android:ems="10"
-            android:hint="Email adresa"
-            android:inputType="textEmailAddress" />
+            android:hint="Server IP:Port"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTable"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:ems="10"
+            android:hint="Broj stola"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/editPassword"
@@ -52,39 +61,45 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.3"
-            android:textSize="20dp"
-            android:textColor="#ffffff"
             android:gravity="center"
             android:paddingLeft="50dp"
-            android:paddingRight="50dp"/>
+            android:paddingRight="50dp"
+            android:textColor="#FF0000"
+            android:textSize="14sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_gravity="center"
             android:layout_weight="0.3"
             android:orientation="horizontal"
-            android:gravity="right"
-            android:paddingRight="50dp">
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btOtkazi"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:text="Napusti aplikaciju"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp" />
 
             <Button
                 android:id="@+id/btLogin"
-                android:layout_width="80dp"
-                android:layout_height="45dp"
+                android:layout_height="55dp"
+                android:layout_width="0dp"
                 android:layout_gravity="center"
-                android:text="Login"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:scaleType="fitCenter"
-                android:layout_marginRight="10dp" />
-            <Button
-                android:id="@+id/btOtkazi"
-                android:layout_width="80dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center"
-                android:text="Otkazi"
+                android:text="Prijavi se"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="12dp"
-                android:scaleType="fitCenter"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="12dp" />
         </LinearLayout>
     </LinearLayout>
 

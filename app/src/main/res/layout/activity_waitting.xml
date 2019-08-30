@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WaitingActivity"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <LinearLayout
+        android:id="@+id/welcomeLayout"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dobrodošli u"
+            android:textColor="#FD111111"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VTŠ Restoran"
+            android:textColor="#0C218D"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ordersLayout"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Naručili ste:"
+            android:textSize="30sp"/>
+        <TextView
+            android:id="@+id/textOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btnDeleteOrders"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Napusti Restoran"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btnOpenMenu"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:text="Otvori meni"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
